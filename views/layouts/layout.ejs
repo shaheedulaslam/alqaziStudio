@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title> Al Qazi</title>
+    <link rel = "Icon" href ="images/icon1.jpeg" class="rounded-circle" type = "image/x-icon">
+    <link href="//fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap adminlog -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet"/>
+    <!-- Template CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<%-body %>
+
+
+
+
+
+
+<!-- all js scripts and files here -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="javascript/theme-change.js"></script><!-- theme switch js (light and dark)-->
+<!-- default jQuery -->
+<script src="javascript/owl.carousel.js"></script>
+<!-- script for tesimonials carousel slider -->
+<script>
+    $(document).ready(function () {
+        $("#owl-demo1").owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: false,
+                    loop: false
+                }
+            }
+        })
+    })
+</script>
+<!-- //script for tesimonials carousel slider -->
+<!-- disable body scroll which navbar is in active -->
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!--/MENU-JS-->
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+</script>
+<!--//MENU-JS-->
+<!-- jQuery-Photo-filter-lightbox-portfolio-plugin -->
+
+<script src="javascript/jquery-1.7.2.js"></script>
+<script src="javascript/jquery.quicksand.js"></script>
+<script src="javascript/script.js"></script>
+<script src="javascript/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+<!-- //jQuery-Photo-filter-lightbox-portfolio-plugin -->
+<!-- bootstrap js -->
+<script src="javascript/bootstrap.min.js"></script>
+<script src="javascript/main.js"></script>
+<!-- sweet alert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>   

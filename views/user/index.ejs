@@ -1,0 +1,209 @@
+<%- include('../partials/header.ejs') %>
+
+
+
+<!-- banner -->
+<section class="bannerhny w3pvt-banner" id="home">
+    <div class="container">
+        <div class="banner-info text-center mx-auto">
+            <div class="w3pvt-logo align-self">
+                 <!-- <span class="fa fa-camera" aria-hidden="true"></span> -->
+                <!-- <h3>Capturing the moments that captivate your heart.</h3> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //banner -->
+<!--/gallery -->
+<section class="w3-gallery py-5">
+    <div class="container py-md-5">
+        <ul class="portfolio-categ filter mb-md-5 mb-4 p-0 justify-content-center">
+            <li class="port-filter all active">
+               <a href="#gallery" style="font-size: xx-large;">Our Gallery</a>
+            </li>
+        </ul>
+        <ul class="portfolio-area clearfix p-0 m-0">
+            <%result.forEach((el=>{%>
+            <li class="portfolio-item2 content" data-id="id-1" data-type="cat-item-1">
+                <span class="image-block">
+
+                    <a class="image-zoom" href="images/<%=el.image%>" data-gal="prettyPhoto[gallery]">
+                        <div class="content-overlay"></div>
+                        <img src="images/<%=el.image%>" class="img-fluid w3layouts agileits" alt="portfolio-img">
+                    </a>
+                </span>
+            </li>
+            <% })) %>
+        </ul>
+        <!--end portfolio-area -->
+    </div>
+    <!-- //gallery container -->
+</section>
+<!-- //gallery-->
+
+<!-- testimonials -->
+<section class="w3l-clients-1" id="testimonials">
+    <!-- /grids -->
+    <div class="cusrtomer-layout py-5">
+        <div class="container py-lg-5 py-md-4">
+            <div class="heading align-self text-center">
+                <h5 class="title-subhny text-dark">Testimonials</h5>
+                <h3 class="hny-title" style="color: #6115b8;">What our Clients say</h3>
+            </div>
+            <!-- /grids -->
+            <div class="testimonial-row mt-5">
+                <div id="owl-demo1" class="owl-two owl-carousel owl-theme mb-md-3 mb-sm-5 mb-4">
+                    <div class="item">
+                        <div class="testimonial-content">
+                            <div class="testimonial">
+                                <div class="test-img"><img src="../images/viswa.jpeg" class="img-fluid"
+                                        alt="client-img">
+                                </div>
+                                <blockquote>
+                                    <q>I'm Truly Impressed With How You Have Managed to Meet Every Goal Set Before You..</q>
+                                </blockquote>
+                                <div class="separatorhny"></div>
+                                <div class="testi-des">
+                                    <div class="peopl align-self">
+                                        <h3 style="color: #6115b8;">Viswajith</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-content">
+                            <div class="testimonial">
+                                <div class="test-img"><img src="../images/aslam.png" class="img-fluid"
+                                        alt="client-img">
+                                </div>
+                                <blockquote>
+                                    <q>Your Work Is Absolutely Very Nice...</q>
+                                </blockquote>
+                                <div class="separatorhny"></div>
+                                <div class="testi-des">
+                                    <div class="peopl align-self">
+                                        <h3 style="color: #6115b8;">Shaheedul Aslam</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-content">
+                            <div class="testimonial">
+                                <div class="test-img"><img src="../images/jamshad.jpeg" class="img-fluid"
+                                        alt="client-img">
+                                </div>
+                                <blockquote>
+                                    <q>You done a good Work For me,Thank You..</q>
+                                </blockquote>
+                                <div class="separatorhny"></div>
+                                <div class="testi-des">
+                                    <div class="peopl align-self">
+                                        <h3 style="color: #6115b8;">Jamshad</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-content">
+                            <div class="testimonial">
+                                <div class="test-img"><img src="../images/adil.jpg" class="img-fluid"
+                                        alt="client-img">
+                                </div>
+                                <blockquote>
+                                    <q>Great Job,You Have Done My Work Very Awesome,ThankYou..</q>
+                                </blockquote>
+                                <div class="separatorhny"></div>
+                                <div class="testi-des">
+                                    <div class="peopl align-self">
+                                        <h3 style="color: #6115b8;">Muhammed Adhil</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /grids -->
+    </div>
+    <!-- //grids -->
+</section>
+<!-- //testimonials -->
+<!-- middle slider -->
+<!-- <div class="projects" id="special">
+    <div class="projects-grids">
+        <div class="istagram-feeds">
+            <div class="projects-w3l-grid-info">
+                <a href="#"><img src="assets/images/s1.jpg" class="img-fluid" alt="" />
+                    <div class="content-overlay"></div>
+                    <div class="content-details fadeIn-top">
+                        <span class="fa fa-instagram"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="projects-w3l-grid-info">
+                <a href="#"><img src="assets/images/s2.jpg" class="img-fluid" alt="" />
+                    <div class="content-overlay"></div>
+                    <div class="content-details fadeIn-top">
+                        <span class="fa fa-instagram"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="projects-w3l-grid-info">
+                <a href="#"><img src="assets/images/s3.jpg" class="img-fluid" alt="" />
+                    <div class="content-overlay"></div>
+                    <div class="content-details fadeIn-top">
+                        <span class="fa fa-instagram"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="projects-w3l-grid-info">
+                <a href="#"><img src="assets/images/s4.jpg" class="img-fluid" alt="" />
+                    <div class="content-overlay"></div>
+                    <div class="content-details fadeIn-top">
+                        <span class="fa fa-instagram"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="projects-w3l-grid-info">
+                <a href="#"><img src="assets/images/s5.jpg" class="img-fluid" alt="" />
+                    <div class="content-overlay"></div>
+                    <div class="content-details fadeIn-top">
+                        <span class="fa fa-instagram"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="projects-w3l-grid-info">
+                <a href="#"><img src="assets/images/s1.jpg" class="img-fluid" alt="" />
+                    <div class="content-overlay"></div>
+                    <div class="content-details fadeIn-top">
+                        <span class="fa fa-instagram"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="projects-w3l-grid-info">
+                <a href="#"><img src="assets/images/s3.jpg" class="img-fluid" alt="" />
+                    <div class="content-overlay"></div>
+                    <div class="content-details fadeIn-top">
+                        <span class="fa fa-instagram"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="projects-w3l-grid-info">
+                <a href="#"><img src="assets/images/s2.jpg" class="img-fluid" alt="" />
+                    <div class="content-overlay"></div>
+                    <div class="content-details fadeIn-top">
+                        <span class="fa fa-instagram"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- //middle slider -->
+
+<%- include('../partials/footer.ejs') %>

@@ -1,0 +1,150 @@
+<%- include('../partials/header.ejs') %>
+
+ 
+<section class="w3l-breadcrumb">
+    <div class="container">
+      <ul class="breadcrumbs-custom-path">
+        <li><a href="/">Home</a></li>
+        <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Contact</li>
+      </ul>
+    </div>
+  </section>
+ 
+ <!-- contact1 -->
+ <div class="py-5" id="contact">
+    <div class="form-41-mian pt-lg-4 pt-md-3 pb-4">
+        <div class="container">
+            <div class="heading text-center mx-auto">
+                <h5 class="title-subhny text-center mb-2 text-dark">Contact With Us</h5>
+                <h3 class="hny-title mb-2" style="color: #6115b8;">Get in Touch with Us </h3>
+                <p class="mb-5">If you have a question regarding our services, feel free
+                    to contact us using the form below.</p>
+            </div>
+            <div class="row">
+
+
+                <div class="col-lg-4 contacts-5-grid-main section-gap mb-lg-0 mb-4 pr-lg-5">
+                    <div class="contacts-5-grid">
+                        <div class="map-content-5">
+                            <section class="tab-content">
+                                <div class="contact-type">
+                                    <div class="address-grid mb-3">
+                                        <span
+                                            class="pos-icon">
+                                            <span class="fa fa-map"></span>
+                                        </span>
+                                        <div class="ad-right">
+                                        <h6 style="color: #6115b8;">Address</h6>
+                                        <p>41 Al Atheer St - Al-Turfa - Ras al Khaimah - United Arab Emirates</p>
+                                        </div>
+                                    </div>
+                                    <div class="address-grid mb-3">
+                                        <span class="pos-icon">
+                                            <span class="fa fa-envelope">
+
+                                            </span>
+                                        </span>
+                                        <div class="ad-right">
+                                        <h6 style="color: #6115b8;">Email</h6>
+                                        <a href="https://mail.google.com/mail/alqazistudio@gmail.com" class="link1">alqazistudio@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="address-grid">
+                                        <span
+                                            class="pos-icon">
+                                            <span class="fa fa-phone"></span>
+                                        </span>
+                                        <div class="ad-right">
+                                            <h6 style="color: #6115b8;">Phone</h6>
+                                            <a href="tel:055-9057172" class="link1">055-9057172</a>
+                                            <a href="tel:050-4667656" class="link1">050-4667656</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+<!-- form -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-light rounded h-100 d-flex align-items-center p-5">
+                        
+                        <form action="" id="submit">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name"  name="name"  style="height: 55px;" required>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email" name="email" style="height: 55px;" required>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="tel" class="form-control border-0" placeholder="Phone number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"  name="ph" style="height: 55px;" required>
+                                    <span class="validity"></span>
+                                    <style>
+                                        input + span {
+                                        padding-right: 30px;
+                                        }
+                                        input:invalid + span::after {
+                                        position: absolute;
+                                        content: "×";
+                                        padding-left: 5px;
+                                        color: #8b0000;
+                                        }
+                                        input:valid + span::after {
+                                        position: absolute;
+                                        content: "✓";
+                                        padding-left: 5px;
+                                        color: #009000;
+                                        }
+                                    </style>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" rows="5" placeholder="Your Feedback" name="Address" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Contact</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+        <!-- //contacts-5-grid -->
+    </div>
+</div>
+
+<div class="container contacts-sub-5 mb-5">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3593.25555621515!2d55.963208215020984!3d25.762121183636637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDQ1JzQzLjYiTiA1NcKwNTcnNTUuNCJF!5e0!3m2!1sen!2sin!4v1677180340103!5m2!1sen!2sin"
+     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script>
+    $("#submit").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxLxNA3OxcWSbmMZ4jMwgD2yZw4fTYJGaENMopA1MQ9F7ac3hnu8by-XzXk2pYuLaO8/exec",
+            data:$("#submit").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
+<!-- footer -->
+<%- include('../partials/footer.ejs') %>
+
+
