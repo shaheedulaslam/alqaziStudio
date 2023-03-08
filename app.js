@@ -46,7 +46,8 @@ app.use(multer({storage:fileStorage,fileFilter:fileFilter }).single('image'))
 
 const mongoose = require('mongoose')
 const User = require('./models/user')
-mongoose.connect('mongodb://127.0.0.1:27017/alqazi')
+// mongoose.connect('mongodb://127.0.0.1:27017/alqazi')
+mongoose.connect(process.env.MONGO_URL)
 const db = mongoose.connection
 db.on('error',error=>console.error(error))
 db.once('open',()=>console.log('db connected'))
